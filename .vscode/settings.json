@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/dd3dea7f-edc2-4a2c-8a4e-3b7c5f861464/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/think-back-end",
+    "appService.deploySubpath": "."
+}

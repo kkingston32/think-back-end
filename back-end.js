@@ -13,8 +13,11 @@ const { DAL } = require('./dal/mongo-dal');
 const port = 3232;
 const secret_key = 'Iliketoeatapplesandbananas';
 
+// const origin = "http://localhost:3000"
+const origin = "https://thinkwellness.azurewebsites.net"
+
 // Middleware setup
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: origin, credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
