@@ -10,7 +10,7 @@ const cookieParser = require('cookie-parser');
 const app = express();
 const { DAL } = require('./dal/mongo-dal');
 
-const port = 3232;
+const port = 8080;
 const secret_key = 'Iliketoeatapplesandbananas';
 
 // const origin = "http://localhost:3000"
