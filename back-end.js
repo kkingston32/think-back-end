@@ -14,7 +14,7 @@ const port = 8080;
 const secret_key = 'Iliketoeatapplesandbananas';
 
 // const origin = "http://localhost:3000"
-const origin = "https://thinkwellness.azurewebsites.net:8080"
+const origin = "https://thinkwellness.azurewebsites.net"
 
 // Middleware setup
 app.use(cors({ origin: origin, credentials: true }));
