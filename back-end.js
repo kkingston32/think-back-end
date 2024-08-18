@@ -14,10 +14,10 @@ const port = 8080;
 const secret_key = 'Iliketoeatapplesandbananas';
 
 // const origin = "http://localhost:3000"
-const origin = "https://thinkwellness.azurewebsites.net"
+// const origin = "https://thinkwellness.azurewebsites.net"
 
 // Middleware setup
-app.use(cors({ origin: origin, credentials: true }));
+app.use(cors({ origin: 'https://thinkwellness.azurewebsites.net', credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
