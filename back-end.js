@@ -280,7 +280,7 @@ app.post('/register', async (req, res) => {
 
 
 app.get('/userprofile/:userId', async (req, res) => {
-    let userId = req.cookies.userId;
+    let userId = req.params.userId;
 
     if (userId == null || userId == 'undefined') {
         res.json({ message: "Please login to access your profile" });
