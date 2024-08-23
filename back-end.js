@@ -17,7 +17,7 @@ const secret_key = 'Iliketoeatapplesandbananas';
 // const origin = "https://thinkwellness.azurewebsites.net"
 
 // Middleware setup
-app.use(cors({ origin: 'https://thinkwellness.azurewebsites.net', credentials: true }));
+app.use(cors({ origin: 'https://thinkwellness.azurewebsites.net', credentials: true,  allowedHeaders: ['Content-Type', 'Authorization'], }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
