@@ -17,7 +17,7 @@ const secret_key = 'Iliketoeatapplesandbananas';
 // const origin = "https://thinkwellness.azurewebsites.net"
 
 // Middleware setup
-app.use(cors({ origin: 'https://thinkwellness.azurewebsites.net', credentials: true,  allowedHeaders: ['Content-Type', 'Authorization'], }));
+app.use(cors({ origin: 'https://thinkwellness.azurewebsites.net',  allowedHeaders: ['Content-Type', 'Authorization'],  }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -196,7 +196,7 @@ app.post('/newPost', uploadPic, async (req, res) => {
         res.json({ message: "Please login to access your profile" });
     } else {
         let post = {
-            posterUserId: posterUserId,
+            posterUserId: data.posterUserId,
             feedUserId: data.feedUserId,
             content: data.content,
             date: data.date,
